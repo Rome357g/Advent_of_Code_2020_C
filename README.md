@@ -1,2 +1,2 @@
 # AdventofCode2020
-Code for Advent of Code 2020 Projects
+My C code for Advent of Code 2020 Projects
