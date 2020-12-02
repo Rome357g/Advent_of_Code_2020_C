@@ -2,6 +2,7 @@
 // Given input such as 4-5 r: rrrjr, only four to five 'r's can be found in rrrjr, each input password is unique
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 int main(void)
 {
@@ -31,16 +32,17 @@ int main(void)
             // printf("%s\n", token2);
             // printf("%s\n", token3);
             // printf("%s\n", token4);
-            // Counting length of fourth token, which for first example rrrjr and should be 5
-            int y;
+            // Counting length of fourth token, which for first example is rrrjr and should be 5
+            unsigned int y;
             for (y = 1; y < strlen(token4); y++)
             {
-                // printf(" %i ", y);
+              //   printf(" %i ", y);
             }
             // Now we index into the third token, the control character r in this case, and iterate through last token
             // For the current example lettertotal should be 4
             int lettertotal = 0;
-            for (int z = 0; z < y; z++)
+            int yy = (int) y;
+            for (int z = 0; z < yy; z++)
             {
                 if (token3[0] == token4[z])
                 {
